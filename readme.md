@@ -1,6 +1,6 @@
-![Homepage screenshot](./src/img/Capa%20N%C3%A3o%20Sei%20O%20Que%20Ouvir.png)
+![Homepage screenshot](./src/img/WhatShouldIListen-Homepage-Screenshot.png)
 
-# What Should I Listen ([Website link](https://viniroveri.github.io/NaoSeiOQueOuvir/#/))
+# What Should I Listen ([Website link](https://whatshouldilisten.vercel.app/))
 
 
 ## What is this?
