@@ -1,0 +1,66 @@
+@import './partials/variaveis';
+
+.lista{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+
+    &-contagem{
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+
+    &-paginas{
+        margin-top: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    &-aviso{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 426px){
+    .lista{
+
+        &-contagem{
+            font-size: 22px;
+        }
+    
+        &-aviso{
+            font-size: 34px;
+        }
+    }
+}
+
+@media (min-width: 769px){
+    .lista{
+
+        &-contagem{
+            font-size: 26px;
+        }
+    
+        &-aviso{
+            font-size: 38px;
+        }
+    }
+}
+
+@media (min-width: 1025px){
+    .lista{
+
+        &-contagem{
+            font-size: 30px;
+        }
+    
+        &-aviso{
+            font-size: 42px;
+        }
+    }
+}

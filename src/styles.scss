@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&display=swap');
+
+@import './css/partials/reset.css';
+@import './css/partials/animacoes';
+@import './css/partials/variaveis';
+@import './css/disco';
+@import './css/header-footer';
+@import './css/home';
+@import './css/filtro';
+@import './css/botaoRandom';
+@import './css/pesquisa';
+@import './css/listaMusicas';
+@import './css/popupMusica';
+@import './css/cardMusica';
+@import './css/favoritas';
+@import './css/popupRemover';
+@import './css/numeroPagina';
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-attachment: fixed;
+    background-image: url('./img/Background.png');
+    overflow-x: hidden;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 800px;
+    min-height: calc(100vh - 70px);
+    padding: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,input,button{
+    color: $roxo-claro;
+    font-family: $texto;
+    text-decoration: none;
+}
+
+.invisivel{
+    display: none;
+}
+
+::-webkit-scrollbar {
+	height: 10px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: $roxo-escuro;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $roxo;
+	border-radius: 4px;
+
+    &:hover{
+        background: #412c92;
+    }
+}

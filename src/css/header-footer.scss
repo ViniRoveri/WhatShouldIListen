@@ -1,0 +1,42 @@
+@import './partials/variaveis';
+
+.header {
+    align-items: center;
+    background-color: $roxo;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 5%;
+    width: 100vw;
+
+    &-home,&-star{
+        cursor: pointer;
+        height: calc(100% - 1.5rem);
+        width: 50px;
+        transition: .3s ease-out all;
+
+        &:hover{
+            scale: 104%;
+        }
+
+        &:active{
+            scale: 98%;
+        }
+    }
+
+    &-logo{
+        height: 100%;
+    }
+}
+
+.footer {
+    background-color: transparent;
+    text-align: center;
+    width: 100%;
+
+    p {
+        color: $roxo;
+        font-size: 12px;
+        padding: 4px 0;
+    }
+}

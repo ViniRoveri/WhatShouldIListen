@@ -1,0 +1,7 @@
+<svg id="arrow-right" class="svg-icon" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<style>
+#arrow-right{
+    transform: rotate(90deg)
+}
+</style>
+<path d="M20.48 783.36c30.72 30.72 76.8 30.72 107.52 0L512 404.48l378.88 378.88c30.72 30.72 76.8 30.72 107.52 0 30.72-30.72 30.72-76.8 0-107.52L563.2 240.64c-30.72-30.72-76.8-30.72-107.52 0L20.48 675.84c-25.6 30.72-25.6 76.8 0 107.52z" fill="#eae6ff"/></svg>

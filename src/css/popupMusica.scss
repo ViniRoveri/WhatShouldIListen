@@ -1,0 +1,206 @@
+@import './partials/variaveis';
+
+.popup{
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url('../img/Background.png');
+    display: flex;
+    height: calc(100vh - 70px);
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50vw);
+    width: 100vw;
+    z-index: 20;
+
+    &-conteudo{
+        background-color: $roxo;
+        border-radius: 22px;
+        box-shadow: 0px 0px 10px rgba($color: $roxo-claro, $alpha: 80%);
+        max-width: 787px;
+        padding: 2rem 1rem;
+        text-align: center;
+        width: 80%;
+
+        &-star{
+            cursor: pointer;
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            width: 30px;
+        }
+
+        &-titulo{
+            font-family: $titulo;
+            font-size: 35px;
+            font-weight: bold;
+            line-height: 102%;
+            margin-bottom: .75rem;
+            width: 100%;
+        }
+
+        &-texto{
+            font-size: 20px;
+            margin-bottom: .25rem;
+            width: 100%;
+
+            &:last-child{
+                margin-bottom: 1rem; 
+            }
+        }
+
+        &-video{
+            height: 173px;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+
+        &-botao{
+            background-color: transparent;
+            border: 2px solid $roxo-claro;
+            border-radius: 20px;
+            color: $roxo-claro;
+            cursor: pointer;
+            display: block;
+            font-size: 20px;
+            margin: 0 auto;
+            padding: .25rem;
+            transition: .3s all ease-out;
+            width: 90%;
+
+            &:hover {
+                scale: 102%;
+            }
+
+            &:active{
+                scale: 98%;
+            }
+        }
+    }
+}
+
+@media (min-width: 426px){
+    .popup{
+    
+        &-conteudo{
+            border-radius: 26px;
+    
+            &-star{
+                width: 34px;
+            }
+    
+            &-titulo{
+                font-size: 39px;
+                margin-bottom: 1rem;
+            }
+    
+            &-texto{
+                font-size: 24px;
+                margin-bottom: .4rem;
+    
+                &:last-child{
+                    margin-bottom: 1.25rem; 
+                }
+            }
+    
+            &-video{
+                height: 327px;
+                margin-bottom: 1.25rem;
+            }
+    
+            &-botao{
+                border-radius: 24px;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px){
+    .popup{
+    
+        &-conteudo{
+            border-radius: 30px;
+    
+            &-star{
+                width: 38px;
+            }
+    
+            &-titulo{
+                font-size: 43px;
+                margin-bottom: 1.15rem;
+            }
+    
+            &-texto{
+                font-size: 28px;
+                margin-bottom: .45rem;
+    
+                &:last-child{
+                    margin-bottom: 1.4rem; 
+                }
+            }
+    
+            &-video{
+                height: 443px;
+                margin-bottom: 1.4rem;
+            }
+    
+            &-botao{
+                border-radius: 28px;
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px){
+    .popup{
+    
+        &-conteudo{
+            border-radius: 34px;
+    
+            &-star{
+                width: 42px;
+            }
+    
+            &-titulo{
+                font-size: 47px;
+            }
+    
+            &-texto{
+                font-size: 32px;
+            }
+    
+            &-botao{
+                border-radius: 32px;
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media (max-height: 426px){
+    .popup{
+        height: unset;
+    
+        &-conteudo{
+    
+            &-titulo{
+                margin-bottom: .32rem;
+            }
+    
+            &-texto{
+                margin-bottom: .12rem;
+    
+                &:last-child{
+                    margin-bottom: .5rem; 
+                }
+            }
+    
+            &-video{
+                height: 173px;
+                margin-bottom: .5rem;
+            }
+        }
+    }
+}

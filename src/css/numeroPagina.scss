@@ -1,0 +1,25 @@
+@import './partials/variaveis';
+
+@mixin padroesNumeroPagina(){
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    height: 28px;
+    margin: .25rem;
+    padding: 5px 0;
+    text-align: center;
+    width: 28px;
+}
+
+.numeroPagina{
+    background-color: $roxo;
+    color: $roxo-claro;
+    @include padroesNumeroPagina()
+}
+
+.numeroPaginaAtual{
+    background-color: $roxo-claro;
+    color: $roxo;
+    @include padroesNumeroPagina()
+}

@@ -1,0 +1,52 @@
+@import'./partials/variaveis';
+
+.botao-random{
+    background-color: $roxo-claro;
+    background-image: url('../img/Dado.svg');
+    background-position: 12px;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    border: none;
+    border-radius: 28px;
+    color: $roxo;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: .8rem 40px .8rem 56px;
+    position: relative;
+    outline: none;
+    transition: .3s ease-out all;
+    width: 100%;
+
+    &:hover{
+        scale: 102%;
+    }
+
+    &:active{
+        scale: 98%;
+    }
+}
+
+@media (min-width: 426px){
+    .botao-random{
+        background-size: 44px;
+        border-radius: 32px;
+        font-size: 24px;
+    } 
+}
+
+@media (min-width: 769px){
+    .botao-random{
+        background-size: 48px;
+        border-radius: 36px;
+        font-size: 28px;
+    } 
+}
+
+@media (min-width: 1025px){
+    .botao-random{
+        background-size: 52px;
+        border-radius: 40px;
+        font-size: 32px;
+    } 
+}

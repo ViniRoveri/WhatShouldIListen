@@ -1,0 +1,73 @@
+@import './partials/variaveis';
+
+.pesquisa{
+    position: relative;
+    
+    &-filtros{
+        margin-bottom: 1rem;
+        
+        &-adicionar{
+            background-color: transparent;
+            border: 2px solid $roxo;
+            border-radius: 20px;
+            color: $roxo-claro;
+            cursor: pointer;
+            font-size: 20px;
+            padding: .5rem 0;
+            transition: .3s ease-out all;
+            width: 100%;
+
+            &:hover{
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    &-divisao{
+        background-color: $roxo-claro;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50vw);
+        width: 100vw;
+    }
+}
+
+@media (min-width: 426px){
+    .pesquisa{
+        
+        &-filtros{
+            
+            &-adicionar{
+                border-radius: 24px;
+                font-size: 24px;
+            }
+        }
+    }  
+}
+
+@media (min-width: 769px){
+    .pesquisa{
+        
+        &-filtros{
+            
+            &-adicionar{
+                border-radius: 28px;
+                font-size: 28px;
+            }
+        }
+    }  
+}
+
+@media (min-width: 1025px){
+    .pesquisa{
+        
+        &-filtros{
+            
+            &-adicionar{
+                border-radius: 32px;
+                font-size: 32px;
+            }
+        }
+    }  
+}

@@ -1,0 +1,220 @@
+@import './partials/variaveis';
+
+.favoritas{
+
+    &-textos{
+        margin-bottom: 1rem;
+
+        &-titulo{
+            font-family: $titulo;
+            font-size: 38px;
+            font-weight: bold;
+            margin: .5rem 0;
+            text-align: center;
+            width: 100%;
+        }
+    
+        &-subtitulo{
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-divisao{
+        background-color: $roxo-claro;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50vw);
+        width: 100vw;
+    }
+
+    &-lista{
+        margin-top: 1rem;
+        width: 100%;
+
+        &-input{
+            background-color: $roxo;
+            border-radius: 20px;
+            color: $roxo-claro;
+            font-size: 25px;
+            margin-bottom: .5rem;
+            padding: .4rem 2rem;
+            width: 100%;
+
+            &::placeholder {
+                color: #aaa;
+                font-size: 20px;
+            }
+        }
+
+        &-contagem{
+            font-size: 18px;
+            text-align: center;
+            width: 100%;
+        }
+
+        &-botao{
+            background-color: $roxo-escuro;
+            border: 2px solid $roxo;
+            border-radius: 22px;
+            color: $roxo;
+            cursor: pointer;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 1rem;
+            padding: .4rem;
+            text-align: center;
+            transition: .3s ease-out all;
+            width: 100%;
+
+            &:hover{
+                scale: 102%;
+            }
+
+            &:active{
+                scale: 98%;
+            }
+        }
+
+        &-paginas{
+            margin-top: 1rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        &-aviso{
+            font-size: 30px;
+            font-weight: bold;
+            margin: 1rem 0;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 426px){
+    .favoritas{
+
+        &-textos{
+    
+            &-titulo{
+                font-size: 42px;
+            }
+        
+            &-subtitulo{
+                font-size: 24px;
+            }
+        }
+    
+        &-lista{
+    
+            &-input{
+                border-radius: 20px;
+                font-size: 29px;
+                padding: .6rem 2rem;
+    
+                &::placeholder {
+                    font-size: 24px;
+                }
+            }
+
+            &-contagem{
+                font-size: 22px;
+            }
+    
+            &-botao{
+                border-radius: 26px;
+                font-size: 29px;
+            }
+    
+            &-aviso{
+                font-size: 34px;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px){
+    .favoritas{
+
+        &-textos{
+    
+            &-titulo{
+                font-size: 46px;
+            }
+        
+            &-subtitulo{
+                font-size: 28px;
+            }
+        }
+    
+        &-lista{
+    
+            &-input{
+                border-radius: 24px;
+                font-size: 33px;
+                padding: .8rem 2rem;
+    
+                &::placeholder {
+                    font-size: 28px;
+                }
+            }
+
+            &-contagem{
+                font-size: 26px;
+            }
+    
+            &-botao{
+                border-radius: 30px;
+                font-size: 33px;
+            }
+    
+            &-aviso{
+                font-size: 38px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px){
+    .favoritas{
+
+        &-textos{
+    
+            &-titulo{
+                font-size: 50px;
+            }
+        
+            &-subtitulo{
+                font-size: 32px;
+            }
+        }
+    
+        &-lista{
+    
+            &-input{
+                border-radius: 28px;
+                font-size: 37px;
+                padding: 1rem 2rem;
+    
+                &::placeholder {
+                    font-size: 32px;
+                }
+            }
+
+            &-contagem{
+                font-size: 30px;
+            }
+    
+            &-botao{
+                border-radius: 34px;
+                font-size: 37px;
+            }
+    
+            &-aviso{
+                font-size: 42px;
+            }
+        }
+    }
+}

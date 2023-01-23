@@ -1,0 +1,445 @@
+@import './partials/variaveis';
+
+@mixin styles-arrows {
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    width: 16px;
+}
+
+@mixin styles-opcoes{
+    overflow-y: auto;
+    max-height: 208px;
+}
+
+@mixin styles-opcao {
+    background-color: #6b4be9;
+    border-bottom: 1px solid $roxo-claro;
+    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
+    padding: 11px 0;
+}
+
+@mixin styles-opcao-last-child {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.filtro {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin: 1rem 0;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+
+    &-filtros {
+        display: inline-block;
+        height: 100%;
+        position: relative;
+        width: 35%;
+
+        &-selecionado {
+            background-color: $roxo;
+            border: 1px solid $roxo-claro;
+            border-top-left-radius: 16px;
+            font-size: 20px;
+            height: 100%;
+            padding: 8px 0;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .filtro-selecionado-fechado {
+            border-bottom-left-radius: 16px;
+        }
+
+        .filtro-selecionado-aberto {
+            border-bottom-left-radius: 0px;
+        }
+
+        &-arrow {
+            @include styles-arrows()
+        }
+
+        &-opcoes {
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            border-left: 1px solid $roxo-claro;
+            border-right: 1px solid $roxo-claro;
+            position: absolute;
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+            @include styles-opcoes()
+        }
+
+        &-opcao {
+            @include styles-opcao();
+
+            &:last-child{
+                @include styles-opcao-last-child()
+            }
+        }
+    }
+
+    &-pesquisa {
+        display: inline-block;
+        height: 100%;
+        position: relative;
+        width: 50%;
+
+        &-input {
+            background-color: $roxo;
+            border: none;
+            font-size: 20px;
+            height: 100%;
+            padding: .1rem 1rem;
+            outline: none;
+            width: 100%;
+
+            &::placeholder {
+                color: #aaa;
+                font-size: 18px;
+            }
+        }
+
+        &-selecionado {
+            background-color: $roxo;
+            font-size: 20px;
+            height: 100%;
+            padding: 9px 0;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        &-arrow {
+            @include styles-arrows()
+        }
+
+        &-opcoes{
+            text-align: center;
+            @include styles-opcoes();
+        }
+
+        &-opcao {
+            @include styles-opcao();
+
+            &:last-child{
+                @include styles-opcao-last-child()
+            }
+        }
+    }
+
+    &-botao {
+        background-color: $roxo;
+        border-bottom-right-radius: 16px;
+        border-left: 1px solid $roxo-claro;
+        border-top-right-radius: 16px;
+        cursor: pointer;
+        display: inline-block;
+        height: 100%;
+        padding: 7px 0;
+        width: 15%;
+        transition: .3s ease-out scale;
+
+        &:hover {
+            scale: 102%;
+        }
+
+        &:active{
+            scale: 98%;
+        }
+
+        &-icon {
+            height: 24px;
+            width: 24px;
+        }
+    }
+}
+
+@media (min-width: 426px){
+    @mixin styles-arrows {
+        top: 18px;
+        width: 20px;
+    }
+    
+    @mixin styles-opcao {
+        font-size: 22px;
+        height: 48px;
+        padding: 10px 0;
+    }
+    
+    @mixin styles-opcao-last-child {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+    .filtro {
+        height: 48px;
+        margin: 1.2rem 0;
+    
+        &-filtros {
+    
+            &-selecionado {
+                border-top-left-radius: 20px;
+                font-size: 24px;
+                padding: 11px 0;
+            }
+    
+            .filtro-selecionado-fechado {
+                border-bottom-left-radius: 20px;
+            }
+    
+            &-arrow {
+                @include styles-arrows()
+            }
+    
+            &-opcoes {
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                @include styles-opcoes()
+            }
+    
+            &-opcao {
+                @include styles-opcao();
+    
+                &:last-child{
+                    @include styles-opcao-last-child()
+                }
+            }
+        }
+    
+        &-pesquisa {
+    
+            &-input {
+                font-size: 24px;
+    
+                &::placeholder {
+                    font-size: 18px;
+                }
+            }
+    
+            &-selecionado {
+                font-size: 24px;
+                padding: 12px 0;
+            }
+    
+            &-arrow {
+                @include styles-arrows()
+            }
+    
+            &-opcoes{
+                @include styles-opcoes();
+            }
+    
+            &-opcao {
+                @include styles-opcao();
+    
+                &:last-child{
+                    @include styles-opcao-last-child()
+                }
+            }
+        }
+    
+        &-botao {
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            padding: 10px 0;
+    
+            &-icon {
+                height: 28px;
+                width: 28px;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px){
+    @mixin styles-arrows {
+        top: 14px;
+        width: 24px;
+    }
+    
+    @mixin styles-opcao {
+        font-size: 26px;
+        height: 52px;
+        padding: 13px 0;
+    }
+    
+    @mixin styles-opcao-last-child {
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+    
+    .filtro {
+        height: 52px;
+    
+        &-filtros {
+    
+            &-selecionado {
+                border-top-left-radius: 24px;
+                font-size: 28px;
+            }
+    
+            .filtro-selecionado-fechado {
+                border-bottom-left-radius: 24px;
+            }
+    
+            &-arrow {
+                @include styles-arrows()
+            }
+    
+            &-opcoes {
+                border-bottom-left-radius: 24px;
+                border-bottom-right-radius: 24px;
+                @include styles-opcoes()
+            }
+    
+            &-opcao {
+                @include styles-opcao();
+    
+                &:last-child{
+                    @include styles-opcao-last-child()
+                }
+            }
+        }
+    
+        &-pesquisa {
+    
+            &-input {
+                font-size: 28px;
+    
+                &::placeholder {
+                    font-size: 22px;
+                }
+            }
+    
+            &-selecionado {
+                font-size: 28px;
+            }
+    
+            &-arrow {
+                @include styles-arrows()
+            }
+    
+            &-opcoes{
+                @include styles-opcoes();
+            }
+    
+            &-opcao {
+                @include styles-opcao();
+    
+                &:last-child{
+                    @include styles-opcao-last-child()
+                }
+            }
+        }
+    
+        &-botao {
+            border-bottom-right-radius: 24px;
+            border-top-right-radius: 24px;
+    
+            &-icon {
+                height: 32px;
+                width: 32px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px){
+    @mixin styles-arrows {
+        width: 28px;
+    }
+    
+    @mixin styles-opcao {
+        font-size: 30px;
+        height: 56px;
+        padding: 12px 0;
+    }
+    
+    @mixin styles-opcao-last-child {
+        border-bottom-left-radius: 28px;
+        border-bottom-right-radius: 28px;
+    }
+    
+    .filtro {
+        height: 56px;
+    
+        &-filtros {
+    
+            &-selecionado {
+                border-top-left-radius: 28px;
+                font-size: 32px;
+            }
+    
+            .filtro-selecionado-fechado {
+                border-bottom-left-radius: 28px;
+            }
+    
+            &-arrow {
+                @include styles-arrows()
+            }
+    
+            &-opcoes {
+                border-bottom-left-radius: 28px;
+                border-bottom-right-radius: 28px;
+                @include styles-opcoes()
+            }
+    
+            &-opcao {
+                @include styles-opcao();
+    
+                &:last-child{
+                    @include styles-opcao-last-child()
+                }
+            }
+        }
+    
+        &-pesquisa {
+    
+            &-input {
+                font-size: 32px;
+    
+                &::placeholder {
+                    font-size: 26px;
+                }
+            }
+    
+            &-selecionado {
+                font-size: 32px;
+            }
+    
+            &-arrow {
+                @include styles-arrows()
+            }
+    
+            &-opcoes{
+                @include styles-opcoes();
+            }
+    
+            &-opcao {
+                @include styles-opcao();
+    
+                &:last-child{
+                    @include styles-opcao-last-child()
+                }
+            }
+        }
+    
+        &-botao {
+            border-bottom-right-radius: 28px;
+            border-top-right-radius: 28px;
+    
+            &-icon {
+                height: 36px;
+                width: 36px;
+            }
+        }
+    }
+}

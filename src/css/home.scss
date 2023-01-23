@@ -1,0 +1,118 @@
+@import './partials/variaveis';
+
+.home {
+    text-align: center;
+
+    &-disco {
+        height: 120px;
+    }
+
+    &-conteudo {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 222px);
+        justify-content: space-around;
+        width: 100%;
+
+        &-titulo {
+            font-family: $titulo;
+            font-size: 55px;
+            text-align: center;
+            width: 100%;
+        }
+
+        &-filtro{
+            width: 100%;
+        
+            &-titulo {
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 16px;
+                text-align: right;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 426px){
+    .home {
+    
+        &-disco {
+            height: 130px;
+        }
+    
+        &-conteudo {
+            height: calc(100vh - 232px);
+    
+            &-titulo {
+                font-size: 63px;
+            }
+    
+            &-filtro{
+            
+                &-titulo {
+                    font-size: 32px;
+                }
+            }
+        }
+    }  
+}
+
+@media (min-width: 769px){
+    .home {
+    
+        &-disco {
+            height: 140px;
+        }
+    
+        &-conteudo {
+            height: calc(100vh - 242px);
+    
+            &-titulo {
+                font-size: 77px;
+            }
+    
+            &-filtro{
+            
+                &-titulo {
+                    font-size: 36px;
+                }
+            }
+        }
+    }  
+}
+
+@media (min-width: 1025px){
+    .home {
+    
+        &-disco {
+            height: 150px;
+        }
+    
+        &-conteudo {
+            height: calc(100vh - 252px);
+    
+            &-titulo {
+                font-size: 81px;
+            }
+    
+            &-filtro{
+            
+                &-titulo {
+                    font-size: 40px;
+                }
+            }
+        }
+    }  
+}
+
+@media (max-height: 426px){
+    .home{
+        
+        &-conteudo{
+            height: 100vh;
+        }
+    }
+}

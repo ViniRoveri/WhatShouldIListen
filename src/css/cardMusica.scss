@@ -1,0 +1,126 @@
+@import './partials/variaveis';
+
+.card{
+    background-color: $roxo;
+    border-radius: 22px;
+    cursor: pointer;
+    margin: .7rem 0;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    width: 100%;
+
+    &:hover{
+        box-shadow: 0px 0px 10px rgba($color: $roxo-claro, $alpha: 80%);
+        transform: scale(101%);
+    }
+
+    &-favorita{
+        background-color: $roxo;
+        border: 1px solid $roxo-claro;
+        border-radius: 50%;
+        height: 28px;
+        position: absolute;
+        right: -4px;
+        top: -4px;
+        width: 28px;
+
+        &-icone{
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    &-titulo{
+        font-family: $titulo;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: .5rem;
+    }
+
+    &-texto{
+        font-size: 22px;
+        margin-bottom: .25rem;
+
+        &:last-child{
+            margin-bottom: 0px; 
+        }
+    }
+}
+
+@media (min-width: 426px){
+    .card{
+        border-radius: 26px;
+        margin: .8rem 0;
+        padding: 1rem 1.25rem;
+
+        &-favorita{
+            height: 32px;
+            width: 32px;
+    
+            &-icone{
+                height: 28px;
+                width: 28px;
+            }
+        }
+    
+        &-titulo{
+            font-size: 34px;
+        }
+    
+        &-texto{
+            font-size: 26px;
+        }
+    }
+}
+
+@media (min-width: 769px){
+    .card{
+        border-radius: 30px;
+        padding: 1rem 1.5rem;
+
+        &-favorita{
+            height: 36px;
+            width: 36px;
+    
+            &-icone{
+                height: 32px;
+                width: 32px;
+            }
+        }
+    
+        &-titulo{
+            font-size: 38px;
+        }
+    
+        &-texto{
+            font-size: 30px;
+        }
+    }
+}
+
+@media (min-width: 1025px){
+    .card{
+        border-radius: 34px;
+        padding: 1rem 1.75rem;
+
+        &-favorita{
+            height: 40px;
+            width: 40px;
+    
+            &-icone{
+                height: 36px;
+                width: 36px;
+            }
+        }
+    
+        &-titulo{
+            font-size: 42px;
+        }
+    
+        &-texto{
+            font-size: 34px;
+        }
+    }
+}
