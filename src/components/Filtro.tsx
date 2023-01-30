@@ -142,8 +142,8 @@ const Filtro = (props:intProps) => {
                 }} style={!props.pesquisaNaoAbrivel ? {cursor:'pointer'} : {cursor:'default'}}>{filtroInputSelecionado}</p>
 
                 {filtrosInputAberto && !props.pesquisaNaoAbrivel ?
-                    <ArrowUp className={`filtro-pesquisa-arrow ${filtroSelecionado !== 'Artist' ? '' : 'invisivel'} ${props.pesquisaNaoAbrivel ? 'invisivel' : ''}`} onClick={() => setFiltrosInputAberto(!filtrosInputAberto)}/> :
-                    <ArrowDown className={`filtro-pesquisa-arrow ${filtroSelecionado !== 'Artist' ? '' : 'invisivel'} ${props.pesquisaNaoAbrivel ? 'invisivel' : ''}`} onClick={() => setFiltrosInputAberto(!filtrosInputAberto)}/>
+                    <ArrowUp className={`filtro-pesquisa-arrow ${filtroSelecionado !== 'Artist' ? '' : 'invisivel'} ${props.pesquisaNaoAbrivel || filtroInputSelecionado ? 'invisivel' : ''}`} onClick={() => setFiltrosInputAberto(!filtrosInputAberto)}/> :
+                    <ArrowDown className={`filtro-pesquisa-arrow ${filtroSelecionado !== 'Artist' ? '' : 'invisivel'} ${props.pesquisaNaoAbrivel || filtroInputSelecionado ? 'invisivel' : ''}`} onClick={() => setFiltrosInputAberto(!filtrosInputAberto)}/>
                 }
 
                 <div className={`filtro-pesquisa-opcoes ${filtroSelecionado === 'Genre' && filtrosInputAberto && !props.pesquisaNaoAbrivel ? '' : 'invisivel'}`}>
