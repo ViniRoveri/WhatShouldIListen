@@ -1,16 +1,9 @@
 ![Homepage screenshot](./src/img/WhatShouldIListen-Homepage-Screenshot.png)
 
-# What Should I Listen ([Website link](https://whatshouldilisten.vercel.app/))
+# **What Should I Listen** ([Website link](https://whatshouldilisten.vercel.app/))
 
 
-## What is this?
-
-A website developed with React, Typescript, SASS/SCSS, Jest, Recoil and React Router used to give the user personalized song recommendations. Recommendations can be based on your taste in artist, genre or vibe. The user can also use the random recommendation, in addition to a favorites tab to save the songs they may want.
-
-
-## Why is this?
-
-To solve the common problem when you want to listen to something, but you have no idea what it really is, or you have the impression that none of the songs you know are good for the moment.
+Website developed with React, Typescript and SASS/SCSS to generate personalized music recommendations for the users. These recommendations can be based on their taste in artist, genre or vibe. The users can also use the random recommendation button, in addition to a Favorites tab to save the songs they may want. When clicking on a song, all information about it is shown, in addition to the music video to be heard right away. The songs are stored in a NoSQL REST API that I created using NodeJS, Express and MongoDB. This API is controlled locally via an interface I also developed specifically for it.
 
 
 ## What challenges did I overcome working on this?
