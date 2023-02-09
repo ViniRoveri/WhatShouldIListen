@@ -77,7 +77,7 @@ const ListaMusicas = (props:intProps)=>{
     useEffect(()=>{
         if(props.dadosApi.length === 0 || musicasFiltradas.length === 0){
             setElementoAviso(
-                <p className="lista-aviso" data-testid="avisoLista">Nenhuma música encontrada<br/>:(</p>
+                <p className="lista-aviso" data-testid="avisoLista">No songs found<br/>:(</p>
             )
         }else{
             setElementoAviso(<></>)
